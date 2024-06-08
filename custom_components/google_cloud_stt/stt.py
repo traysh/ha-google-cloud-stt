@@ -259,6 +259,7 @@ class GoogleCloudSTTProvider(Provider):
             encoding=encoding,
             sample_rate_hertz=metadata.sample_rate,
             model=self._model,
+            enable_automatic_punctuation=True,
         )
 
         def job():
